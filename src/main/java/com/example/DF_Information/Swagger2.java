@@ -35,7 +35,7 @@ public class Swagger2 {
         return new ApiInfoBuilder()
                 .title("DF_Information  API")
                 .description("快速上手,快速开发,快速交接")
-                .contact(new Contact("GSH", "https://my.oschina.net/u/3681868/home", "15136390655@163.COM"))
+                .contact(new Contact("GSH", "https://www.baidu.com", "15136390655@163.COM"))
                 .version("1.0.0")
                 .build();
     }
