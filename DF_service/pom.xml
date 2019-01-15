@@ -11,25 +11,37 @@
 
     <groupId>com.DF</groupId>
     <artifactId>DF_service</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>DF_service</name>
+    <url>http://maven.apache.org</url>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
-    <dependencyManagement>
     <dependencies>
-        <dependency>
-            <artifactId>DF_common</artifactId>
-            <groupId>com.DF</groupId>
-            <version>${common.version}</version>
-        </dependency>
         <dependency>
             <artifactId>DF_dao</artifactId>
             <groupId>com.DF</groupId>
-            <version>${dao.version}</version>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <artifactId>DF_model</artifactId>
-            <groupId>com.DF</groupId>
-            <version>${model.version}</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
         </dependency>
     </dependencies>
-    </dependencyManagement>
+    <build>
+        <finalName>DF_service</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <classifier>exec</classifier>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

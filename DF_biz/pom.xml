@@ -11,6 +11,12 @@
 
     <groupId>com.DF</groupId>
     <artifactId>DF_biz</artifactId>
-
+    <dependencies>
+        <dependency>
+            <groupId>com.DF</groupId>
+            <artifactId>DF_service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
