@@ -16,6 +16,6 @@ public class TestServiceImpl implements TestService {
     private TestMapper testMapper;
     @Override
     public String test() {
-        return "aaaa";
+        return "aaaaaaaaa";
     }
 }
